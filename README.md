@@ -32,18 +32,30 @@ $clientSecret  = "CLIENT_SECRET"; //Client Secret of an application created on  
 $adjeminPay = new AdjeminPay($clientId, $clientSecret);
 
 
-//Make Payment transaction
+//Create a checkout
 /** @var Transaction $transaction Transaction*/
-$transaction = $adjeminPay->createTransaction([
-  'merchant_transaction_id' => 'b72e51dc-7211-4e85-a937-5372c8769d36', //required You create a merchant_transaction_id
-  'designation' => 'Test', //required
+$transaction = $adjeminPay->createCheckout([
+  'amount' => 200, //required
   'currency_code' => 'XOF', //required
-  'buyer_name' => 'Ange Bagui', //required
-  'notification_url' => 'https://adjemin.com', //required
-  'payment_method_reference' => 'MTN_CI', //required //Enum = ["MTN_CI", "ORANGE_CI"]
-  'buyer_reference' => '2250556888385', //required
-  'amount' => '10', //required
-  'otp' => '' //used when payment_method_reference is ORANGE_CI
+  'merchant_trans_id' => 'b72e51dc-7211-4e85-a937-5372c8769d36', //required You provide a merchant_trans_id
+  'designation' => 'Paiement de facture', //required
+  'customer_recipient_number' => '2250556888385', //required
+  "customer_email" =>"angebagui@adjemin.com",
+  "customer_firstname" =>"Ange",
+  "customer_lastname" =>"Bagui",
+  "webhook_url":"https://example.com/webhook_url",
+  "return_url": "https://example.com/success",
+  "cancel_url": "https://example.com/failure"
+]);
+
+//Complete a checkout
+/** @var Transaction $transaction Transaction*/
+$transaction = $adjeminPay->completeCheckout('b72e51dc-7211-4e85-a937-5372c8769d36',[
+  'operator_code' => 'XOF',
+  'customer_recipient_number' => '2250556888385', //required
+  "customer_email" =>"angebagui@adjemin.com",
+  "customer_firstname" =>"Ange",
+  "customer_lastname" =>"Bagui"
 ]);
 
 var_dump($transaction);
@@ -51,7 +63,7 @@ var_dump($transaction);
 //Get Transaction Status by merchant_transaction_id
 /** @var Transaction $transaction Transaction*/
 $merchant_transaction_id = 'b72e51dc-7211-4e85-a937-5372c8769d36';
-$transaction = $adjeminPay->getTransactionStatus($merchant_transaction_id);
+$transaction = $adjeminPay->getPaymentStatus($merchant_transaction_id);
 
 var_dump($transaction);
 
