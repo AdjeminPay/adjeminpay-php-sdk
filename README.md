@@ -1,6 +1,6 @@
 # AdjeminPay PHP SDK
 
-[![Latest Stable Version](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Total Downloads](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/downloads)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Latest Unstable Version](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v/unstable)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![License](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/license)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk)
+[![Latest Stable Version](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Total Downloads](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/downloads)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Latest Unstable Version](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v/unstable)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![License](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/license)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![PHP Version Require](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/require/php)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk)
 
 The AdjeminPay PHP SDK provides convenient access to the AdjeminPay API from
 applications written in the PHP language. It includes a pre-defined set of
