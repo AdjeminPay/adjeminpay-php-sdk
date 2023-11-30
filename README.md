@@ -72,7 +72,7 @@ var_dump($transaction);
 /** @var Transaction $transaction Transaction*/
 $transaction = $adjeminPay->createPayout([
   'operator_code' => 'wave_ci',
-  'amount' => 200, //required
+  'amount' => 200000, //required
   'currency_code' => 'XOF', //required
   'merchant_trans_id' => 'b72e51dc-7211-4e85-a937-5372c8769d36', //required You provide a merchant_trans_id
   'designation' => 'Paiement de salaire', //required
