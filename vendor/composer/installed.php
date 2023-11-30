@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'adjeminpay/adjeminpay-php-sdk',
-        'pretty_version' => '3.0.0',
-        'version' => '3.0.0.0',
+        'pretty_version' => '3.0.2',
+        'version' => '3.0.2.0',
         'reference' => NULL,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
@@ -11,8 +11,8 @@
     ),
     'versions' => array(
         'adjeminpay/adjeminpay-php-sdk' => array(
-            'pretty_version' => '3.0.0',
-            'version' => '3.0.0.0',
+            'pretty_version' => '3.0.2',
+            'version' => '3.0.2.0',
             'reference' => NULL,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
