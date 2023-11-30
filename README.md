@@ -19,7 +19,7 @@ You can install the bindings via [Composer](http://getcomposer.org/). Run the fo
 composer require adjeminpay/adjeminpay_php_sdk
 ```
 
-## Use case
+## Create a checkout
 ```php
 <?php
 
@@ -30,7 +30,6 @@ use AdjeminPay\Transaction;
 $clientId = "CLIENT_ID"; //Client ID of an application created on  Merchant backoffice
 $clientSecret  = "CLIENT_SECRET"; //Client Secret of an application created on  Merchant backoffice
 $adjeminPay = new AdjeminPay($clientId, $clientSecret);
-
 
 //Create a checkout
 /** @var Transaction $transaction Transaction*/
@@ -48,10 +47,10 @@ $transaction = $adjeminPay->createCheckout([
   "cancel_url": "https://example.com/failure"
 ]);
 
-//Complete a checkout
+//Complete the checkout
 /** @var Transaction $transaction Transaction*/
 $transaction = $adjeminPay->completeCheckout('b72e51dc-7211-4e85-a937-5372c8769d36',[
-  'operator_code' => 'wave_ci',
+  'operator_code' => 'wave_ci', //Your get all payments Methods with $adjeminPay->getPaymentMethods('CI')
   'customer_recipient_number' => '2250556888385', //required
   "customer_email" =>"angebagui@adjemin.com",
   "customer_firstname" =>"Ange",
@@ -60,13 +59,41 @@ $transaction = $adjeminPay->completeCheckout('b72e51dc-7211-4e85-a937-5372c8769d
 
 var_dump($transaction);
 
-//Get Transaction Status by merchant_transaction_id
+```
+
+## Payment Status
+```php
+<?php
+
+use AdjeminPay\AdjeminPay;
+use AdjeminPay\Transaction;
+
+//Create AdjeminPay instance
+$clientId = "CLIENT_ID"; //Client ID of an application created on  Merchant backoffice
+$clientSecret  = "CLIENT_SECRET"; //Client Secret of an application created on  Merchant backoffice
+$adjeminPay = new AdjeminPay($clientId, $clientSecret);
+
+
+//Get Checkout or Payout Status by merchant_transaction_id
 /** @var Transaction $transaction Transaction*/
 $merchant_transaction_id = 'b72e51dc-7211-4e85-a937-5372c8769d36';
 $transaction = $adjeminPay->getPaymentStatus($merchant_transaction_id);
 
 var_dump($transaction);
 
+```
+
+## Create a Payout
+```php
+<?php
+
+use AdjeminPay\AdjeminPay;
+use AdjeminPay\Transaction;
+
+//Create AdjeminPay instance
+$clientId = "CLIENT_ID"; //Client ID of an application created on  Merchant backoffice
+$clientSecret  = "CLIENT_SECRET"; //Client Secret of an application created on  Merchant backoffice
+$adjeminPay = new AdjeminPay($clientId, $clientSecret);
 
 //Create a Payout
 /** @var Transaction $transaction Transaction*/
