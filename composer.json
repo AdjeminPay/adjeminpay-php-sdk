@@ -1,0 +1,35 @@
+{
+  "name": "adjeminpay/adjeminpay-php-sdk",
+  "description": "SDK PHP to create transaction or get transaction status",
+  "keywords": [
+    "AdjeminPay",
+    "api",
+    "sdk",
+    "php",
+    "integration",
+    "fintech",
+    "mobile money"
+  ],
+  "homepage": "https://github.com/AdjeminPay/",
+  "license": "MIT",
+  "version": "3.0.0",
+  "authors": [
+    {
+      "name": "Adjemin and contributors"
+    }
+  ],
+  "require": {
+    "php" : ">=7.4",
+    "guzzlehttp/guzzle": "^6.3",
+    "ext-json": "*"
+  },
+  "support": {
+    "email": "support@adjeminpay.com"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "AdjeminPay\\": "src/AdjeminPay/"
+    }
+  }
+}
