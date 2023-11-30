@@ -1,6 +1,6 @@
 # AdjeminPay PHP SDK
 
-[![Latest Stable Version](https://poser.pugx.org/adjeminpay/adjeminpay_php_sdk/v)](//packagist.org/packages/adjeminpay/adjeminpay_php_sdk) [![Total Downloads](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/downloads)](//packagist.org/packages/adjeminpay/adjeminpay_php_sdk) [![Latest Unstable Version](https://poser.pugx.org/adjeminpay/adjeminpay_php_sdk/v/unstable)](//packagist.org/packages/adjeminpay/adjeminpay_php_sdk) [![License](https://poser.pugx.org/adjeminpay/adjeminpay_php_sdk/license)](//packagist.org/packages/adjeminpay/adjeminpay_php_sdk)
+[![Latest Stable Version](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Total Downloads](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/downloads)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Latest Unstable Version](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v/unstable)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![License](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/license)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk)
 
 The AdjeminPay PHP SDK provides convenient access to the AdjeminPay API from
 applications written in the PHP language. It includes a pre-defined set of
@@ -46,6 +46,7 @@ $transaction = $adjeminPay->createCheckout([
   "return_url": "https://example.com/success",
   "cancel_url": "https://example.com/failure"
 ]);
+
 
 //Complete the checkout
 /** @var Transaction $transaction Transaction*/
