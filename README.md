@@ -1,6 +1,6 @@
 # AdjeminPay PHP SDK
 
-[![Latest Stable Version](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Total Downloads](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/downloads)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Latest Unstable Version](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v/unstable)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![License](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/license)](//packagist.org/packages/adjeminpay/adjeminpay-php-sdk)
+[![Latest Stable Version](https://poser.pugx.org/adjeminpay/adjeminpay_php_sdk/v)](//packagist.org/packages/adjeminpay/adjeminpay_php_sdk) [![Total Downloads](https://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/downloads)](//packagist.org/packages/adjeminpay/adjeminpay_php_sdk) [![Latest Unstable Version](https://poser.pugx.org/adjeminpay/adjeminpay_php_sdk/v/unstable)](//packagist.org/packages/adjeminpay/adjeminpay_php_sdk) [![License](https://poser.pugx.org/adjeminpay/adjeminpay_php_sdk/license)](//packagist.org/packages/adjeminpay/adjeminpay_php_sdk)
 
 The AdjeminPay PHP SDK provides convenient access to the AdjeminPay API from
 applications written in the PHP language. It includes a pre-defined set of
@@ -9,14 +9,14 @@ responses which makes it compatible with a wide range of versions of the Adjemin
 
 ## Requirements
 
-PHP 5.6.0 and later.
+PHP 7.4.0 and later.
 
 ## Composer
 
 You can install the bindings via [Composer](http://getcomposer.org/). Run the following command:
 
 ```bash
-composer require adjeminpay/adjeminpay-php-sdk
+composer require adjeminpay/adjeminpay_php_sdk
 ```
 
 ## Use case
