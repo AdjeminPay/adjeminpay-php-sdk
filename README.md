@@ -119,7 +119,6 @@ $transaction = $adjeminPay->createPayout([
 <?php
 
 use AdjeminPay\AdjeminPay;
-use AdjeminPay\Transaction;
 
 //Create AdjeminPay instance
 $clientId = "CLIENT_ID"; //Client ID of an application created on  Merchant backoffice
