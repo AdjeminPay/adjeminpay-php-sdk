@@ -112,3 +112,25 @@ $transaction = $adjeminPay->createPayout([
 
 
 ```
+
+
+## Get Payment Methods by Country ISO Code
+```php
+<?php
+
+use AdjeminPay\AdjeminPay;
+use AdjeminPay\Transaction;
+
+//Create AdjeminPay instance
+$clientId = "CLIENT_ID"; //Client ID of an application created on  Merchant backoffice
+$clientSecret  = "CLIENT_SECRET"; //Client Secret of an application created on  Merchant backoffice
+$adjeminPay = new AdjeminPay($clientId, $clientSecret);
+
+
+//Get Payment Methods by Country CODE
+$country_iso = 'CI';
+$paymentMethods = $adjeminPay->getPaymentMethods($country_iso);
+
+var_dump($paymentMethods);
+
+```
