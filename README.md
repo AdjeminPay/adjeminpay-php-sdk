@@ -79,6 +79,18 @@ $adjeminPay = new AdjeminPay($clientId, $clientSecret);
 $merchant_transaction_id = 'b72e51dc-7211-4e85-a937-5372c8769d36';
 $transaction = $adjeminPay->getPaymentStatus($merchant_transaction_id);
 
+if($transaction->getStatus() == Transaction::SUCCESSFUL){
+    echo  "Transaction is successful"
+}
+
+if($transaction->getStatus() == Transaction::PENDING){
+    echo  "Transaction is pending"
+}
+
+if($transaction->getStatus() == Transaction::FAILED){
+    echo  "Transaction is failed"
+}
+
 var_dump($transaction);
 
 ```
