@@ -38,10 +38,10 @@ $transaction = $adjeminPay->createCheckout([
   'currency_code' => 'XOF', //required
   'merchant_trans_id' => 'b72e51dc-7211-4e85-a937-5372c8769d36', //required You provide a merchant_trans_id
   'designation' => 'Paiement de facture', //required
-  'customer_recipient_number' => '2250556888385', //required
-  "customer_email" =>"angebagui@adjemin.com",
-  "customer_firstname" =>"Ange",
-  "customer_lastname" =>"Bagui",
+  'customer_recipient_number' => '2250505000000', //required
+  "customer_email" =>"customer@gmail.com",
+  "customer_firstname" =>"Paul",
+  "customer_lastname" =>"Koffi",
   "webhook_url":"https://example.com/webhook_url",
   "return_url": "https://example.com/success",
   "cancel_url": "https://example.com/failure"
@@ -52,10 +52,10 @@ $transaction = $adjeminPay->createCheckout([
 /** @var Transaction $transaction Transaction*/
 $transaction = $adjeminPay->completeCheckout('b72e51dc-7211-4e85-a937-5372c8769d36',[
   'operator_code' => 'wave_ci', //Your get all payments Methods with $adjeminPay->getPaymentMethods('CI')
-  'customer_recipient_number' => '2250556888385', //required
-  "customer_email" =>"angebagui@adjemin.com",
-  "customer_firstname" =>"Ange",
-  "customer_lastname" =>"Bagui"
+  'customer_recipient_number' => '2250505000000', //required
+  "customer_email" =>"customer@gmail.com",
+  "customer_firstname" =>"Paul",
+  "customer_lastname" =>"Koffi",
 ]);
 
 var_dump($transaction);

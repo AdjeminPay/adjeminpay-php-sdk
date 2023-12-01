@@ -498,6 +498,51 @@ class AdjeminPay implements AdjeminPayInterface {
 
     public function getKnowIfWeCanCollectMoney()
     {
-        // TODO: Implement getKnowIfWeCanCollectMoney() method.
+        if(empty($this->getAccessToken())){
+            $message = 'The requested service needs credentials, but the ones provided were invalid.';
+            throw  new AdjeminPayAuthException($message,401);
+        }
+
+        $client = new Client();
+        $url = $this->getBaseUrl()."/v3/merchants/know_if_can_collect_money";
+
+        $response = $client->get($url, [
+            "headers" => [
+                'Authorization' => 'Bearer '.$this->getAccessToken(),
+                'Accept' => 'application/json'
+            ]
+        ]);
+
+        $body = $response->getBody()->getContents();
+        if($response->getStatusCode() == 200){
+            $json = json_decode($body, true);
+
+            if(array_key_exists('data', $json) && !empty( $json['data'])){
+                $data = $json['data'];
+                if(!is_bool($data)){
+                    $data = boolval($data);
+                }
+
+                return $data;
+            }else{
+                $json =  json_decode($body, true);
+                if(array_key_exists('message', $json) && !empty( $json['message'])){
+                    $message  = $json['message'];
+                }else{
+                    $message  = StatusCode::messages[StatusCode::OPERATION_ERROR];
+                }
+                throw  new AdjeminPayException($message,$response->getStatusCode());
+            }
+
+        }else{
+
+            $json =  json_decode($body, true);
+            if(array_key_exists('message', $json) && !empty( $json['message'])){
+                $message  = $json['message'];
+            }else{
+                $message  = StatusCode::messages[StatusCode::OPERATION_ERROR];
+            }
+            throw  new AdjeminPayException($message,$response->getStatusCode());
+        }
     }
 }
