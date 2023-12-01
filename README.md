@@ -74,7 +74,6 @@ $clientId = "CLIENT_ID"; //Client ID of an application created on  Merchant back
 $clientSecret  = "CLIENT_SECRET"; //Client Secret of an application created on  Merchant backoffice
 $adjeminPay = new AdjeminPay($clientId, $clientSecret);
 
-
 //Get Checkout or Payout Status by merchant_transaction_id
 /** @var Transaction $transaction Transaction*/
 $merchant_transaction_id = 'b72e51dc-7211-4e85-a937-5372c8769d36';
