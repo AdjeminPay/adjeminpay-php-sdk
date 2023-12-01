@@ -140,7 +140,6 @@ class AdjeminPay implements AdjeminPayInterface {
      */
     public function createCheckout($params): Transaction
     {
-
         //Validate parameters
         if(!array_key_exists('amount',$params) || empty($params['amount'])) throw new AdjeminPayArgumentException("Bad request,  amount is required", StatusCode::codes[StatusCode::INVALID_PARAMS]);
         if(!array_key_exists('currency_code',$params) || empty($params['currency_code'])) throw new AdjeminPayArgumentException("Bad request,  currency_code is required", StatusCode::codes[StatusCode::INVALID_PARAMS]);
