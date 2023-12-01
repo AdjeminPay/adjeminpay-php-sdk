@@ -1,5 +1,8 @@
 # ChangeLog AdjeminPay SDK PHP
 
+## [1.0.1] - 01/12/2023
+* Guzzle updated
+
 ## [1.0.0] - 01/12/2023
 
 * Create a Checkout
