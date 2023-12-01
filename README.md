@@ -1,7 +1,5 @@
 # AdjeminPay PHP SDK
 
-[![Latest Stable Version](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Total Downloads](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/downloads)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![Latest Unstable Version](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/v/unstable)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![License](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/license)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk) [![PHP Version Require](http://poser.pugx.org/adjeminpay/adjeminpay-php-sdk/require/php)](https://packagist.org/packages/adjeminpay/adjeminpay-php-sdk)
-
 The AdjeminPay PHP SDK provides convenient access to the AdjeminPay API from
 applications written in the PHP language. It includes a pre-defined set of
 classes for API resources that initialize themselves dynamically from API
@@ -16,7 +14,7 @@ PHP 7.4.0 and later.
 You can install the bindings via [Composer](http://getcomposer.org/). Run the following command:
 
 ```bash
-composer require adjeminpay/adjeminpay_php_sdk
+composer require adjeminpay/adjeminpay-sdk-php
 ```
 
 ## Create a checkout
