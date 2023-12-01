@@ -1,4 +1,4 @@
-# AdjeminPay PHP SDK
+# AdjeminPay SDK PHP
 
 [![Latest Stable Version](http://poser.pugx.org/adjeminpay/adjeminpay-sdk-php/v)](https://packagist.org/packages/adjeminpay/adjeminpay-sdk-php) [![Total Downloads](http://poser.pugx.org/adjeminpay/adjeminpay-sdk-php/downloads)](https://packagist.org/packages/adjeminpay/adjeminpay-sdk-php) [![Latest Unstable Version](http://poser.pugx.org/adjeminpay/adjeminpay-sdk-php/v/unstable)](https://packagist.org/packages/adjeminpay/adjeminpay-sdk-php) [![License](http://poser.pugx.org/adjeminpay/adjeminpay-sdk-php/license)](https://packagist.org/packages/adjeminpay/adjeminpay-sdk-php) [![PHP Version Require](http://poser.pugx.org/adjeminpay/adjeminpay-sdk-php/require/php)](https://packagist.org/packages/adjeminpay/adjeminpay-sdk-php)
 
@@ -9,7 +9,7 @@ responses which makes it compatible with a wide range of versions of the Adjemin
 
 ## Requirements
 
-PHP 7.4.0 and later.
+PHP 7.0.0 and later.
 
 ## Composer
 
