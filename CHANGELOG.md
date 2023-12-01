@@ -1,5 +1,8 @@
 # ChangeLog AdjeminPay SDK PHP
 
+## [1.0.2] - 01/12/2023
+* Guzzle updated to ^7.2
+
 ## [1.0.1] - 01/12/2023
 * Guzzle updated
 

@@ -1,1 +1,1 @@
-{"version":1,"defects":{"tests\\AdjeminPayTest::testGetPaymentStatus":4},"times":{"tests\\AdjeminPay\\AdjeminPayTest::testGetPaymentStatus":1.095,"tests\\AdjeminPayTest::testGetPaymentStatus":0.996}}
+{"version":1,"defects":{"tests\\AdjeminPayTest::testGetPaymentStatus":4},"times":{"tests\\AdjeminPay\\AdjeminPayTest::testGetPaymentStatus":1.095,"tests\\AdjeminPayTest::testGetPaymentStatus":0.638}}
