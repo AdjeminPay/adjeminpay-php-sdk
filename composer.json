@@ -10,7 +10,7 @@
     "fintech",
     "mobile money"
   ],
-  "homepage": "https://github.com/AdjeminPay/adjeminpay-php-sdk",
+  "homepage": "https://github.com/AdjeminPay/adjeminpay-sdk-php",
   "license": "MIT",
   "version": "3.0.4",
   "authors": [
