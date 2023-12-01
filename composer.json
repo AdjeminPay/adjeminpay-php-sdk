@@ -1,5 +1,5 @@
 {
-  "name": "adjeminpay/adjeminpay-php-sdk",
+  "name": "adjeminpay/adjeminpay-sdk-php",
   "description": "SDK PHP to create transaction or get transaction status",
   "keywords": [
     "AdjeminPay",
