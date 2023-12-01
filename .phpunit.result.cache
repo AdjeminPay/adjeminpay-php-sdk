@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"tests\\AdjeminPay\\AdjeminPayTest::testGetPaymentStatus":1.095}}
+{"version":1,"defects":[],"times":{"tests\\AdjeminPay\\AdjeminPayTest::testGetPaymentStatus":1.095,"tests\\AdjeminPayTest::testGetPaymentStatus":1.131}}

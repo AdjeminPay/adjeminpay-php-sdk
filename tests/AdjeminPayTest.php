@@ -1,6 +1,6 @@
 <?php
 
-namespace tests\AdjeminPay;
+namespace tests;
 
 use AdjeminPay\AdjeminPay;
 use AdjeminPay\Transaction;
@@ -17,10 +17,8 @@ class AdjeminPayTest extends TestCase{
     public function setUp(): void
     {
         //Create AdjeminPay instance
-        $clientId = "9a9b2458-5f5f-4e10-bd66-6ac41a4de7b2"; //Client ID of an application created on  Merchant backoffice
-        //$clientId = "CLIENT_ID"; //Client ID of an application created on  Merchant backoffice
-        $clientSecret  = "MlXk0cGHhHXQdXgEXoyy9qOGxQPWNJRjCIxufFoZ"; //Client Secret of an application created on  Merchant backoffice
-        //$clientSecret  = "CLIENT_SECRET"; //Client Secret of an application created on  Merchant backoffice
+        $clientId = "CLIENT_ID"; //Client ID of an application created on  Merchant backoffice
+        $clientSecret  = "CLIENT_SECRET"; //Client Secret of an application created on  Merchant backoffice
         $this->adjeminPay = new AdjeminPay($clientId, $clientSecret);
     }
 
